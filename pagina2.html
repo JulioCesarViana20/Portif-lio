@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/pagina2.css" />
+  <title>Julio Cesar</title>
+</head>
+<body>
+
+<header>
+  <button class="idioma-btn" onclick="changeLanguage('pt')">Português</button>
+  <button class="idioma-btn" onclick="changeLanguage('en')">English</button>
+
+  <nav class="nav-menu">
+    <h3>
+      <ul>
+        <li><a href="#about" data-key="menu-out">Fora da web</a></li>
+        <li><a href="#mencoes" data-key="menu-mentions">O que falam de mim</a></li>
+        <li><a href="#coisasQueAdoro" data-key="menu-facts">Fatos sobre mim</a></li>
+      </ul>
+    </h3>
+  </nav>
+</header>
+
+<section id="about">
+  <h2 data-key="section-out">Fora da web</h2>
+  <div data-key="age">Tenho 13 anos</div>
+  <div data-key="ita">Tenho o sonho de passar no ITA</div>
+  <div data-key="medal">Sou medalhista do Canguru (Nível E, 73 de pontuação)</div>
+  <div data-key="finance">Tenho o sonho de ter minha independência financeira aos 16 anos</div>
+  <div data-key="travel">Quero viajar o mundo</div>
+</section>
+
+<section id="mencoes">
+  <h2 data-key="section-mentions">O que falam de mim</h2>
+  <div class="Mentions">
+    <div data-key="mention">menção de</div>
+    <div data-key="mention">menção de</div>
+    <div data-key="mention">menção de</div>
+  </div>
+</section>
+
+<section id="coisasQueAdoro">
+  <h2 data-key="section-facts">Fatos sobre mim</h2>
+  <div data-key="love-study">Amo estudar</div>
+  <div data-key="thirst">Tenho anseio pelo saber</div>
+  <div data-key="recognition">Desejo ser reconhecido no mercado de trabalho</div>
+  <div data-key="help-people">Desejo que as pessoas avancem e saibam o quanto são capazes</div>
+  <div data-key="optimism">Me considero uma pessoa otimista e capaz</div>
+</section>
+
+
+
+<div>
+  <h2 data-key="footer-msg">
+    O portifólio utiliza apenas front end, mas a cada dia eu me aprimoro cada vez mais para ser um dev full stack.
+  </h2>
+</div>
+
+<div>
+  <button class="btn-voltar" onclick="window.location.href='index.html'" data-key="back-button">
+    Volte para a página principal
+  </button>
+</div>
+
+<div>
+  <img src="https://media.giphy.com/media/KN0ZLA1xABgj9Ma7Gv/giphy.gif" alt="Apresentação" />
+</div>
+
+
+<script>
+ const translations = {
+    pt: {
+      "menu-out": "Fora da web",
+      "menu-mentions": "O que falam de mim",
+      "menu-facts": "Fatos sobre mim",
+      "section-out": "Fora da web",
+      "age": "Tenho 13 anos",
+      "ita": "Tenho o sonho de passar no ITA",
+      "medal": "Sou medalhista do Canguru (Nível E, 73 de pontuação)",
+      "finance": "Tenho o sonho de ter minha independência financeira aos 16 anos",
+      "travel": "Quero viajar o mundo",
+      "section-mentions": "O que falam de mim",
+      "mention": "menção de",
+      "section-facts": "Fatos sobre mim",
+      "love-study": "Amo estudar",
+      "thirst": "Tenho anseio pelo saber",
+      "recognition": "Desejo ser reconhecido no mercado de trabalho",
+      "help-people": "Desejo que as pessoas avancem e saibam o quanto são capazes",
+      "optimism": "Me considero uma pessoa otimista e capaz",
+      "game-title": "Jogo de Adivinhação",
+      "game-instruction": "Digite um número de 0 a 10:",
+      "game-submit": "Enviar",
+      "footer-msg": "O portifólio utiliza apenas front end, mas a cada dia eu me aprimoro cada vez mais para ser um dev full stack.",
+      "back-button": "Volte para a página principal"
+    },
+    en: {
+      "menu-out": "Offline",
+      "menu-mentions": "What people say about me",
+      "menu-facts": "Facts about me",
+      "section-out": "Offline",
+      "age": "I'm 13 years old",
+      "ita": "I dream of getting into ITA",
+      "medal": "I'm a Kangaroo medalist (Level E, score: 73)",
+      "finance": "I dream of financial independence by age 16",
+      "travel": "I want to travel the world",
+      "section-mentions": "What people say about me",
+      "mention": "mention from",
+      "section-facts": "Facts about me",
+      "love-study": "I love studying",
+      "thirst": "I thirst for knowledge",
+      "recognition": "I want to be recognized in the job market",
+      "help-people": "I want to help people grow and realize how capable they are",
+      "optimism": "I consider myself an optimistic and capable person",
+      "game-title": "Guessing Game",
+      "game-instruction": "Enter a number from 0 to 10:",
+      "game-submit": "Submit",
+      "footer-msg": "This portfolio uses only front end, but I'm improving daily to become a full stack developer.",
+      "back-button": "Back to main page"
+    }
+  };
+
+  function changeLanguage(lang) {
+    document.querySelectorAll("[data-key]").forEach(el => {
+      const key = el.getAttribute("data-key");
+      if (translations[lang] && translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

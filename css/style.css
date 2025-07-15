@@ -1,30 +1,43 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fonte global e fundo */
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1a436bc2; /* Azul roxo translúcido */
-    color: #333333;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('black-mosaic-background-vector.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
 }
 
+
+img {
+    max-width: 100%;
+    align-items: center;
+}
 /* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a436bc2; /* Azul roxo */
+    background-color: #2b2e3369; /* azul médio escuro */
     color: white;
-    padding: 20px 40px;
-    box-shadow: 0 2px 8px rgba(26, 67, 107, 0.4); /* sombra suave com a cor azul roxo */
+    font-size: 0.8em;
+    box-shadow: 0 2px 8px rgb(189, 192, 199);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 header .logo {
@@ -32,6 +45,16 @@ header .logo {
     font-weight: bold;
 }
 
+.btn-Julio{
+    background-color: #3a61a8; /* azul mais claro */
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: gradient 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(58, 97, 168, 0.8);
+}
 header .idioma-btn {
     background-color: transparent;
     border: 2px solid white;
@@ -45,7 +68,7 @@ header .idioma-btn {
 
 header .idioma-btn:hover {
     background-color: white;
-    color: #333333;
+    color: #1f3a6d;
 }
 
 /* Menu de navegação */
@@ -67,63 +90,61 @@ header .idioma-btn:hover {
 }
 
 .nav-menu a:hover {
-    color: #f4f4f4;
+    color: #aaccee;
     transform: scale(1.1);
 }
 
 /* Botão contato */
 header .btn-contato {
-    background-color: #7a84c8; /* Azul médio */
+    background-color: #3a61a8; /* azul mais claro */
     color: white;
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 10px;
     font-size: 1.2em;
     transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 12px rgba(122, 132, 200, 0.6);
+    box-shadow: 0 4px 12px rgba(58, 97, 168, 0.8);
 }
 
 header .btn-contato:hover {
-    background-color: #6a76b1; /* Azul mais escuro */
-    box-shadow: 0 6px 18px rgba(106, 118, 177, 0.8);
+    background-color: #2a4b7a; /* azul mais escuro */
+    box-shadow: 0 6px 18px rgba(42, 75, 122, 1);
 }
 
 /* Seções gerais */
 section {
-    background-color: white;
-    text-align: center;
+    background-color: #000000;
+    container: left;
     padding: 60px 40px;
     margin: 40px auto;
-    max-width: 900px;
+    max-width: 700px;
     border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(26, 67, 107, 0.12); /* sombra azul suave */
-    color: #333;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 section:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 36px rgba(26, 67, 107, 0.18);
+    box-shadow: 0 12px 36px rgb(255, 255, 255);
 }
 
 section h2 {
     font-size: 2.4em;
     margin-bottom: 25px;
     font-weight: 700;
-    color: #1a436b; /* Azul escuro */
-    text-shadow: 1px 1px 3px rgba(26, 67, 107, 0.2);
+    color: #1145a7;
+    text-shadow: 1px 1px 3px rgba(31, 58, 109, 0.15);
 }
 
 section p {
     font-size: 1.25em;
-    color: #666666; /* Cinza claro para texto secundário */
+    color: #ffffff;
     max-width: 700px;
     margin: 0 auto 30px auto;
     line-height: 1.8;
 }
 
 section a {
-    color: #7a84c8; /* Azul médio */
+    color: #3a61a8;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -131,37 +152,49 @@ section a {
 
 section a:hover {
     text-decoration: underline;
-    color: #6a76b1; /* Azul mais escuro */
+    color: #2a4b7a;
 }
 
 /* Projetos */
 .project {
-    background-color: #f4f4f4; /* Cinza bem claro */
-    border: 1px solid #ddd;
+    background-color: #e7ebf7; /* azul clarinho */
+    border: 2px solid #3a61a8;
     padding: 30px 25px;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(122, 132, 200, 0.15);
+    box-shadow: 0 6px 15px rgba(58, 97, 168, 0.3);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: left;
+    color: #222;
+
+}
+
+.project1{
+    background-color: #e7ebf7; /* azul clarinho */
+    border: 2px solid #3a61a8;
+    padding: 30px 25px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(58, 97, 168, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    max-width: 700px;
+    text-align: left;
+    color: #222;
 }
 
 .project:hover {
-    box-shadow: 0 12px 30px rgba(122, 132, 200, 0.25);
+    box-shadow: 0 12px 30px rgba(58, 97, 168, 0.5);
     transform: translateY(-4px);
 }
 
 .project h3 {
-    color: #1a436b;
+    color: #1f3a6d;
     font-size: 1.7em;
     margin-bottom: 15px;
 }
 
 .project p {
-    color: #555555;
     font-size: 1.1em;
     line-height: 1.5;
 }
@@ -171,17 +204,20 @@ section a:hover {
     header {
         flex-direction: column;
         text-align: center;
-        padding: 20px 15px;
+        padding: 30px 15px;
     }
 
     .nav-menu ul {
-        flex-direction: column;
-        margin: 20px 0;
-        align-items: center;
+       
+    display: flex;
+    flex-direction: row; /* Alinha os itens na horizontal */
+    gap: 10px; /* Espaço entre os itens */
+
+
     }
 
     .nav-menu li {
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     section {
@@ -200,18 +236,23 @@ section a:hover {
     .project h3 {
         font-size: 1.4em;
     }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Link WhatsApp */
 .whatsapp-link {
-    color: #23d612dc; /* Verde WhatsApp */
+    color: #25d366; /* verde whatsapp */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .whatsapp-link:hover {
-    color: #094411;
+    color: #128c7e;
     text-decoration: underline;
 }
 
@@ -221,10 +262,17 @@ img {
     height: 400px;
     object-fit: contain;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(26, 67, 107, 0.15);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.671);
     transition: transform 0.3s ease;
 }
 
 img:hover {
     transform: scale(1.05);
 }
+
+/* Rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+

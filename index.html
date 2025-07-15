@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Portfólio</title>
+</head>
+<body>
+
+  
+<header>
+  
+
+  <button class="btn-Julio" onclick="window.location.href='pagina2.html'">Julio Cesar</button>
+  <button class="idioma-btn" onclick="changeLanguage('pt')">Português</button>
+  <button class="idioma-btn" onclick="changeLanguage('en')">English</button>
+
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#about" class="lang-about-title">Sobre</a></li>
+      <li><a href="#project" class="lang-projects-title">Projetos</a></li>
+      <li><a href="#comunication" class="lang-contact-title">Comunicação</a></li>
+      <li><a href="#Github" class="lang-github-title">MeuGitHub</a></li>
+      <li><a href="#Especializacao" class="lang-especializacao-title">Especializações</a></li>
+    </ul>
+  </nav>
+
+  <ul>
+    <li><a href="https://wa.me/qr/WRH2CLQZDEXLK1" class="whatsapp-link">Entre em Contato por Whatsapp</a></li>
+  </ul>
+</header>
+
+<section id="about">
+  <h2 class="lang-about-title">Sobre</h2>
+  <p class="lang-about-description">
+    Meu nome é Julio Cesar, sou um desenvolvedor Full Stack com maior especialização em Front-End. Tenho experiência no desenvolvimento de aplicações web modernas, com domínio em linguagens como JavaScript e no uso de tecnologias como Node.js, Express e bancos de dados relacionais e não relacionais.  
+    No Front-End, também atuo com boas práticas de HTML, CSS e frameworks como React, buscando sempre entregar interfaces funcionais e bem estruturadas.  
+    Sou comprometido com a escrita de código limpo, manutenível e orientado a boas práticas de desenvolvimento. Estou em constante evolução, sempre estudando novas ferramentas e metodologias para aprimorar meu desempenho e entregar soluções eficientes.
+  </p>
+  <p class="lang-about-description1">
+    Nível de inglês: intermediário-avançado (B2-B3), com capacidade para ler documentação técnica, participar de reuniões e me comunicar de forma clara em contextos profissionais.
+  </p>
+</section>
+
+<section id="project">
+  <h2 class="lang-projects-title">Projetos</h2>
+  <div class="project">
+    <li><a href="https://github.com/JulioCesarViana20/quiz-stranger-things/blob/main/README.md" class="gitHub-link">Entre no README!</a></li>
+    <p class="lang-project1-description">Esse projeto foi desenvolvido com HTML, CSS e JS.</p>
+  </div>
+</section>
+
+
+<section id="Github">
+  <h2 class="lang-github-title">Github</h2>
+  <li><a href="https://github.com/JulioCesarViana20" class="lang-github-link">Entre no meu gitHub!</a></li>
+</section>
+
+<section id="Especializacao">
+  <h2 class="lang-especializacao-title">certificados</h2>
+  <img src="logica.jpg" alt="certificado" />
+</section>
+
+
+<section id="comunication">
+  <h2 class="lang-contact-title">Comunicação</h2>
+  <p class="lang-contact-description">Entre em contato comigo por email(20juliocesar12@gmail.com) ou Whatsapp.</p>
+  <p class="lang-contact-description2">Mande seu formulário em: </p>
+  <li><a href="https://forms.gle/tFbx6vbZCC6JGJZN8" class="lang-apertar">Aperte aqui</a></li>
+</section>
+
+
+<script>
+function changeLanguage(lang) {
+  const texts = {
+    pt: {
+      "about-title": "Sobre",
+      "about-description": "Meu nome é Julio Cesar, sou um desenvolvedor Full Stack com maior especialização em Front-End. Tenho experiência no desenvolvimento de aplicações web modernas, com domínio em linguagens como JavaScript e no uso de tecnologias como Node.js, Express e bancos de dados relacionais e não relacionais. No Front-End, também atuo com boas práticas de HTML, CSS e frameworks como React, buscando sempre entregar interfaces funcionais e bem estruturadas. Sou comprometido com a escrita de código limpo, manutenível e orientado a boas práticas de desenvolvimento. Estou em constante evolução, sempre estudando novas ferramentas e metodologias para aprimorar meu desempenho e entregar soluções eficientes.",
+      "about-description1": "Nível de inglês: intermediário-avançado (B2-B3), com capacidade para ler documentação técnica, participar de reuniões e me comunicar de forma clara em contextos profissionais.",
+      "projects-title": "Projetos",
+      "project1-description": "Esse projeto foi desenvolvido com HTML, CSS e JS.",
+      "contact-title": "Comunicação",
+      "contact-description": "Entre em contato comigo por email(20juliocesar12@gmail.com) ou Whatsapp.",
+      "contact-description2": "Mande seu formulário em: ",
+      "apertar": "Aperte aqui",
+      "github-title": "Github",
+      "github-link": "Entre no meu gitHub!",
+      "especializacao-title": "Certificados"
+    },
+    en: {
+      "about-title": "About",
+      "about-description": "My name is Julio Cesar. I’m a Full Stack Developer with stronger expertise in Front-End. I have experience building modern web applications, working with technologies like JavaScript, Node.js, Express, and both relational and non-relational databases. On the Front-End, I follow best practices using HTML, CSS, and frameworks like React to deliver well-structured and functional interfaces. I’m committed to writing clean, maintainable code aligned with solid development standards. I’m constantly evolving, always learning new tools and methodologies to improve my performance and deliver efficient solutions.",
+      "about-description1": "English level: upper-intermediate (B2-B3), able to read technical documentation, attend meetings, and communicate clearly in professional contexts.",
+      "projects-title": "Projects",
+      "project1-description": "This project was developed with HTML, CSS and JS.",
+      "contact-title": "Contact",
+      "contact-description": "Contact me by email (20juliocesar12@gmail.com) or Whatsapp.",
+      "contact-description2": "Send your form at: ",
+      "apertar": "Press here",
+      "github-title": "Github",
+      "github-link": "Check out my GitHub!",
+      "especializacao-title": "Certificates"
+    }
+  };
+
+  document.querySelectorAll(".lang-about-title").forEach(el => el.textContent = texts[lang]["about-title"]);
+  document.querySelectorAll(".lang-about-description").forEach(el => el.textContent = texts[lang]["about-description"]);
+  document.querySelectorAll(".lang-about-description1").forEach(el => el.textContent = texts[lang]["about-description1"]);
+
+  document.querySelectorAll(".lang-projects-title").forEach(el => el.textContent = texts[lang]["projects-title"]);
+  document.querySelectorAll(".lang-project1-description").forEach(el => el.textContent = texts[lang]["project1-description"]);
+
+  document.querySelectorAll(".lang-contact-title").forEach(el => el.textContent = texts[lang]["contact-title"]);
+  document.querySelectorAll(".lang-contact-description").forEach(el => el.textContent = texts[lang]["contact-description"]);
+  document.querySelectorAll(".lang-contact-description2").forEach(el => el.textContent = texts[lang]["contact-description2"]);
+  document.querySelectorAll(".lang-apertar").forEach(el => el.textContent = texts[lang]["apertar"]);
+
+  document.querySelectorAll(".lang-github-title").forEach(el => el.textContent = texts[lang]["github-title"]);
+  document.querySelectorAll(".lang-github-link").forEach(el => el.textContent = texts[lang]["github-link"]);
+
+  document.querySelectorAll(".lang-especializacao-title").forEach(el => el.textContent = texts[lang]["especializacao-title"]);
+}
+</script>
+
+</body>
+</html>
