@@ -2,9 +2,11 @@
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 100vh;
-  background:  linear-gradient(to top, #4d08a1c2, #000000b6); /* azul escuro ao azul médio */
-  font-family: Arial, sans-serif;
+  background: url('fundo2.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
 }
 /* Cabeçalho */
 header {
@@ -15,10 +17,10 @@ header {
     max-width: 900px;
     border-radius: 15px;
     display: flex;
-    background-color: #81266680;
+    background-color: #0fa2ade0;
     color: white;
     padding: 20px 40px;
-    box-shadow: 0 2px 8px #3b0138;
+    box-shadow: 0 2px 8px #070242;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -42,14 +44,14 @@ header {
 }
 
 .nav-menu a:hover {
-    color: #b287e4;
+    color: #0fa3ad;
     transform: scale(1.1);
 }
 
 
 
 section {
-    background-color: #f9f9fb; /* quase branco */
+    background-color: #416083d0; /* quase branco */
     text-align: center;
     padding: 60px 40px;
     margin: 40px auto;
@@ -63,14 +65,14 @@ section {
 
 section:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 36px rgba(110, 23, 145, 0.4);
+    box-shadow: 0 12px 36px #0fa3ad;
 }
 
 section h2 {
     font-size: 2.4em;
     margin-bottom: 25px;
     font-weight: 700;
-    color: #53063c;
+    color: #0fa3ad;
     text-shadow: 1px 1px 3px rgba(31, 58, 109, 0.15);
 }
 
@@ -108,14 +110,14 @@ input, button {
 }
 
 section a {
-    color: #53063c;
+    color: #0fa3ad;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .btn-voltar {
-    background-color: #a412b86c; /* azul mais claro */
+    background-color: #000000; /* azul mais claro */
     color: white;
     padding: 10px 25px;
     text-decoration: none;
@@ -181,10 +183,7 @@ div {
         font-size: 1.4em;
     }
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+    
 }
 
 
