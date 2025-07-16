@@ -30,7 +30,7 @@ header {
     color: white;
     font-size: 0.8em;
     box-shadow: 0 2px 8px rgb(189, 192, 199);
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 1000;
 }

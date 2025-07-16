@@ -11,19 +11,28 @@ body {
 /* Cabeçalho */
 header {
     
-     text-align: center;
-    padding: 60px 40px;
-    margin: 40px auto;
-    max-width: 900px;
-    border-radius: 15px;
-    display: flex;
-    background-color: #0fa2ade0;
+     display: flex;
+    justify-content: center;
+    align-items: left;
+    background-color: #2b2e3369; /* azul médio escuro */
     color: white;
-    padding: 20px 40px;
-    box-shadow: 0 2px 8px #070242;
-    position: sticky;
+    font-size: 0.8em;
+    box-shadow: 0 2px 8px rgb(189, 192, 199);
+    position: static;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+
+
+
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b2e33; /* sua cor */
+  z-index: 1000; /* para ficar acima do conteúdo */
+}
+
 }
 /* Menu de navegação */
 .nav-menu ul {
