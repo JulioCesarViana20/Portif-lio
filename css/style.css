@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  box-sizing: border-box;
   background: url('Blue_glare_lines_abstract_art_4K_design_2560x1440.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
@@ -119,7 +120,7 @@ section {
     margin: 40px auto;
     max-width: 700px;
     border-radius: 15px;
-    
+    align-items: left;
 }
 
 section:hover {
@@ -167,11 +168,12 @@ section a:hover {
     max-width: 700px;
     text-align: left;
     color: #222;
+    justify-content: left;
 
 }
 
 .project1{
-    background-color: #e7ebf7; /* azul clarinho */
+    background-color: #1a327a; /* azul clarinho */
     border: 2px solid #3a61a8;
     padding: 30px 25px;
     margin: 20px auto;
